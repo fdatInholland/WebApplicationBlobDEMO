@@ -1,0 +1,6 @@
+@WebApplicationBlobDEMO_HostAddress = http://localhost:5209
+
+GET {{WebApplicationBlobDEMO_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
