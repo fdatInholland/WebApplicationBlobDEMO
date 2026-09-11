@@ -81,7 +81,6 @@ namespace WebApplicationBlobDEMO.Controllers
                 return BadRequest("The configured BlobServiceClient cannot sign SAS tokens. Check your connection string or credentials.");
             }
 
-            // Create a SAS builder specifying permissions and expiration
             var sasBuilder = new BlobSasBuilder
             {
                 BlobContainerName = ContainerName,
