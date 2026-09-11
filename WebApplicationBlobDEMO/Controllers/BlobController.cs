@@ -87,7 +87,7 @@ namespace WebApplicationBlobDEMO.Controllers
                 BlobName = blobName,
                 Resource = "b", // "b" specifies a individual Blob SAS
                 StartsOn = DateTimeOffset.UtcNow.AddMinutes(-5), // Clock skew buffer
-                ExpiresOn = DateTimeOffset.UtcNow.AddHours(3)   // SAS Token validity duration (1 hour)
+                ExpiresOn = DateTimeOffset.UtcNow.AddHours(3)   // SAS Token validity duration (3 hours)
             };
 
             sasBuilder.SetPermissions(BlobSasPermissions.Read);
